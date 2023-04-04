@@ -1,0 +1,42 @@
+@import './../../../Config/config.scss';
+
+.container__login__leftSide {
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    &__premium {
+        &__title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        &__price-tag{
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: .75rem;
+        }
+        &__description {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 2rem;
+            line-height: 250%;
+        }
+        &__options {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: .75rem;
+            line-height: 250%;
+            /* &__item {
+                &::before {
+                    content: "•";
+                    color: white;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            } */
+        }
+    }
+}

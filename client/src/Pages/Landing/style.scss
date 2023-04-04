@@ -1,0 +1,11 @@
+@import './../../Config/config.scss';
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: auto !important;
+    
+}

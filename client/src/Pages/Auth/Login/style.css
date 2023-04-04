@@ -1,0 +1,62 @@
+.container__login__rightSide__form {
+  width: 100%;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container__login__rightSide__form__input-container {
+  margin-top: 3rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container__login__rightSide__form__input-container:last-child {
+  margin-bottom: 3rem;
+}
+.container__login__rightSide__form__input-container label {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.container__login__rightSide__form__input-container input {
+  width: 100%;
+  min-height: 20px;
+  font-size: 0.9rem;
+  padding: 0 0 10px 10px;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.15s;
+}
+.container__login__rightSide__form__input-container input:focus {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+.container__login__rightSide__form__button-container {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.container__login__rightSide__form__button-container__button {
+  padding: 20px;
+  background: white;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(2, 0, 36);
+  transition: 0.15s;
+}
+.container__login__rightSide__form__button-container__button:hover {
+  box-shadow: #077a3e 0px 0px 16px 1px;
+}/*# sourceMappingURL=style.css.map */

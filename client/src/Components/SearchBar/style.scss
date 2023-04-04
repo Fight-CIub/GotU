@@ -1,0 +1,44 @@
+@import './../../Config/config.scss';
+
+.mainPage__tags-bar__container {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(white, 90%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__content {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-around;
+            &__title {
+                font-size: 2rem;
+            }
+            &__tags-selector {
+                margin: 1rem 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+                justify-content: flex-start;
+                align-items: center;
+                &__clear-btn {
+                    border: none;
+                    background: none;
+                    color: $primary-color;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+            &__description {
+                font-style: italic;
+            }
+        }
+    }

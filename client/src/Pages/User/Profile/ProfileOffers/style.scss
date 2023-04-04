@@ -1,0 +1,64 @@
+.mainPage__profile-offers-container {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__content {
+        width: 100%;
+        max-width: 1000px;
+    }
+    &__add-offer-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        &__group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 0.2rem;
+            width: 100%;
+            &__label {
+                font-size: 1rem;
+                font-weight: 600;
+                color: rgba(black, 70%);
+            }
+            >input, >textarea {
+                width: 100%;
+                padding: 0.5rem;
+                border: 1px solid rgba(black, 30%);
+                border-radius: 0.2rem;
+                outline: none;
+                font-size: 1rem;
+                font-weight: 400;
+                color: rgba(black, 70%);
+                &:focus {
+                    border: 1px solid rgba(black, 70%);
+                }
+                &[type="number"] {
+                    width: 10rem;
+                }
+            }
+            >textarea {
+                resize: vertical;
+                max-height: 10rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainPage__profile-offers-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__content {
+        width: 95%;
+    }
+}
+}

@@ -1,0 +1,146 @@
+$colors: rgba(blue, 0.4); //zmienne pod kolor
+/* ('./../../Config/config.scss'); */
+@import './../../Config/config.scss';
+
+.header {
+        display: flex;
+        position: sticky;
+        top: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100;
+        background: rgba(black, 90%);
+        min-height: 8vh;
+        box-shadow: rgba(black, 1) 0px 0px 10px 0px;
+        z-index: 1;
+    
+        &__logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;           
+        }
+        
+        &__pages {
+            color: white;
+            display: none;
+            &__links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__divider {
+                    width: 90%;
+                    height: 1px;
+                    background: rgba(white, 0.5);
+                }
+            }
+        }
+
+        &__search-bar {
+            width: 25%;
+            input{
+                padding: 5px;
+                width: 100%;
+                background: none;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid lighten($secondary-color, 20%);
+                color: white;
+                transition: .15s;
+                font-size: 1rem;
+                &:focus {
+                    border-bottom: 1px solid lighten($secondary-color, 50%);
+                }
+            }
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            &__link{
+                margin-right: 2rem;
+                &:last-child{margin: 0;}
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+                transition: .15s;
+                &:hover{
+                    color: darken(white, 30%);
+                    text-shadow: white 0 0 1px;
+                }
+            }
+        } 
+        &__user-panel {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            &__login-in-btn {
+                padding: 15px;
+                background: none;
+                color: white;
+                border: 1px solid white;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: .15s;
+                &:hover {
+                    background: $primary-color;
+                    border-color: $secondary-color;
+                    box-shadow: 0 0 20px -5px lighten($secondary-color, 20%);
+                }
+            }
+            &__menu-btn {
+                margin-left: 10px;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: grid;
+        padding: .5rem 0;
+        place-items:center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 0px 0px;
+        grid-template-areas:
+            "logo login"
+            "panel panel";
+        &__logo {
+            grid-area: logo;
+            display: none;
+            // margin-bottom: 10px;
+        }
+        &__pages{
+            display: block;
+        }
+        &__user-panel {
+            grid-area: login;
+            & button {
+                padding: 10px;
+            }
+        }
+        &__search-bar {
+            grid-area: panel;
+            width: 90%;
+            font-size: smaller;
+            // margin-bottom: 10px;
+        }
+        &__links {
+            display: none;
+        }
+    }
+}

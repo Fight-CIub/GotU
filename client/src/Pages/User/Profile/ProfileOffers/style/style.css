@@ -1,0 +1,64 @@
+.mainPage__profile-offers-container {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainPage__profile-offers-container__content {
+  width: 100%;
+  max-width: 1000px;
+}
+.mainPage__profile-offers-container__add-offer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.mainPage__profile-offers-container__add-offer-form__group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+.mainPage__profile-offers-container__add-offer-form__group__label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__profile-offers-container__add-offer-form__group > input, .mainPage__profile-offers-container__add-offer-form__group > textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__profile-offers-container__add-offer-form__group > input:focus, .mainPage__profile-offers-container__add-offer-form__group > textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+.mainPage__profile-offers-container__add-offer-form__group > input[type=number], .mainPage__profile-offers-container__add-offer-form__group > textarea[type=number] {
+  width: 10rem;
+}
+.mainPage__profile-offers-container__add-offer-form__group > textarea {
+  resize: vertical;
+  max-height: 10rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainPage__profile-offers-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainPage__profile-offers-container__content {
+    width: 95%;
+  }
+}/*# sourceMappingURL=style.css.map */

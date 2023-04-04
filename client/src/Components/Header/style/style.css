@@ -1,0 +1,135 @@
+/* ('./../../Config/config.scss'); */
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100;
+  background: rgba(0, 0, 0, 0.9);
+  min-height: 8vh;
+  box-shadow: black 0px 0px 10px 0px;
+  z-index: 1;
+}
+.header__logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+.header__pages {
+  color: white;
+  display: none;
+}
+.header__pages__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__pages__links__divider {
+  width: 90%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.header__search-bar {
+  width: 25%;
+}
+.header__search-bar input {
+  padding: 5px;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4d5653;
+  color: white;
+  transition: 0.15s;
+  font-size: 1rem;
+}
+.header__search-bar input:focus {
+  border-bottom: 1px solid #99a3a0;
+}
+.header__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__links__link {
+  margin-right: 2rem;
+}
+.header__links__link:last-child {
+  margin: 0;
+}
+.header__links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.15s;
+}
+.header__links a:hover {
+  color: #b3b3b3;
+  text-shadow: white 0 0 1px;
+}
+.header__user-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.header__user-panel__login-in-btn {
+  padding: 15px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.header__user-panel__login-in-btn:hover {
+  background: rgb(24, 140, 93);
+  border-color: #1d201f;
+  box-shadow: 0 0 20px -5px #4d5653;
+}
+.header__user-panel__menu-btn {
+  margin-left: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: grid;
+    padding: 0.5rem 0;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 0px 0px;
+    grid-template-areas: "logo login" "panel panel";
+  }
+  .header__logo {
+    grid-area: logo;
+    display: none;
+  }
+  .header__pages {
+    display: block;
+  }
+  .header__user-panel {
+    grid-area: login;
+  }
+  .header__user-panel button {
+    padding: 10px;
+  }
+  .header__search-bar {
+    grid-area: panel;
+    width: 90%;
+    font-size: smaller;
+  }
+  .header__links {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

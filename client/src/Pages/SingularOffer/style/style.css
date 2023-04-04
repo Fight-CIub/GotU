@@ -1,0 +1,460 @@
+.mainPage__offer__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainPage__offer__container__content {
+  max-width: calc(1000px + 25vw);
+  width: 95%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__user-panel {
+  min-width: 25vw;
+}
+.mainPage__offer__container__content__user-panel__user {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mainPage__offer__container__content__user-panel__user__moreOffers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__user-panel__user__moreOffers__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mainPage__offer__container__content__user-panel__user__moreOffers__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background: rgb(24, 140, 93);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.mainPage__offer__container__content__user-panel__user__moreOffers__button:hover {
+  background: #14764f;
+  box-shadow: 0 0 5px -2px #1d201f;
+}
+.mainPage__offer__container__content__user-panel__user__contact {
+  overflow-wrap: break-word;
+  width: 100%;
+}
+.mainPage__offer__container__content__user-panel__user__contact__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.mainPage__offer__container__content__user-panel__user__contact__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+}
+.mainPage__offer__container__content__user-panel__user__contact__container__label {
+  margin-right: 0.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__offer__container__content__user-panel__user__contact__container__value {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.mainPage__offer__container__content__user-panel__user__contact__container__value:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__offer__container__content__user-panel__user__divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+}
+.mainPage__offer__container__content__user-panel__user__data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mainPage__offer__container__content__user-panel__user__data__name {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.mainPage__offer__container__content__user-panel__user__data__sign-in-time {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__offer__container__content__user-panel__user__avatar, .mainPage__offer__container__content__user-panel__user__data__name {
+  cursor: pointer;
+}
+.mainPage__offer__container__content__offer-panel {
+  width: calc(100% - 25vw);
+  padding: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__buttons__save, .mainPage__offer__container__content__offer-panel__edit-page__change-container__change__buttons__clear {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background: rgb(24, 140, 93);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__buttons__save:hover, .mainPage__offer__container__content__offer-panel__edit-page__change-container__change__buttons__clear:hover {
+  background: #14764f;
+  box-shadow: 0 0 5px -2px #1d201f;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__buttons__clear {
+  background: rgb(220, 100, 100);
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__buttons__clear:hover {
+  background: #111312;
+  box-shadow: 0 0 5px -2px rgb(24, 140, 93);
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__photo span {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__add-photo-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background: rgb(24, 140, 93);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__add-photo-button:hover {
+  background: #14764f;
+  box-shadow: 0 0 5px -2px #1d201f;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__container__photo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__container__photo__icon {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__photos__container__photo__text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change input, .mainPage__offer__container__content__offer-panel__edit-page__change-container__change textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  outline: none;
+  transition: 0.15s;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change input:focus, .mainPage__offer__container__content__offer-panel__edit-page__change-container__change textarea:focus {
+  border-color: rgb(24, 140, 93);
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change textarea {
+  resize: none;
+  box-sizing: border-box;
+  resize: vertical;
+  max-height: 300px;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__price {
+  max-width: 10rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__price::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__edit-page__change-container__change__price-container__currency {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__offer__container__content__offer-panel__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.mainPage__offer__container__content__offer-panel__header__edit-button {
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: 0.15s;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.mainPage__offer__container__content__offer-panel__header__edit-button:hover {
+  background: rgba(255, 165, 0, 0.9);
+  color: white;
+  border-color: white;
+}
+.mainPage__offer__container__content__offer-panel__header__go-back-button {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.15s;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.mainPage__offer__container__content__offer-panel__header__go-back-button:hover {
+  background: #1d201f;
+  box-shadow: 0 0 10px -2px #1d201f;
+  color: white;
+}
+.mainPage__offer__container__content__offer-panel__header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mainPage__offer__container__content__offer-panel__header__title__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainPage__offer__container__content__offer-panel__header__title__date {
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__offer__container__content__offer-panel__photos-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainPage__offer__container__content__offer-panel__photos-gallery__photo img {
+  height: 100%;
+  max-height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  object-fit: cover;
+}
+.mainPage__offer__container__content__offer-panel__photos-gallery__switch-buttons {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+}
+.mainPage__offer__container__content__offer-panel__photos-gallery__switch-buttons__count {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+.mainPage__offer__container__content__offer-panel__photos-gallery__switch-buttons svg {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.mainPage__offer__container__content__offer-panel__photos-gallery__switch-buttons svg:hover {
+  color: #1d201f;
+}
+.mainPage__offer__container__content__offer-panel__description {
+  width: 100%;
+  text-align: justify;
+}
+.mainPage__offer__container__content__offer-panel__buy {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.mainPage__offer__container__content__offer-panel__buy__price {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1d201f;
+}
+.mainPage__offer__container__content__offer-panel__buy__button {
+  padding: 0.75rem;
+  border-radius: 5px;
+  background: #1d201f;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.mainPage__offer__container__content__offer-panel__buy__button:hover {
+  background: rgba(29, 32, 31, 0.9);
+}
+.mainPage__offer__container__content__offer-panel__reviews-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.mainPage__offer__container__content__offer-panel__reviews-panel__header {
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  padding-bottom: 1rem;
+}
+.mainPage__offer__container__content__offer-panel__reviews-panel__stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.mainPage__offer__container__content__user-panel, .mainPage__offer__container__content__offer-panel {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainPage__offer__container__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 1rem;
+  }
+  .mainPage__offer__container__content__user-panel {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .mainPage__offer__container__content__offer-panel {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
