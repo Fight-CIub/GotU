@@ -13,6 +13,7 @@ Aplikacja zostałą zabezpieczona przed ewentualnymi oszustami - użytkownik mus
   * Copy the project path and open the terminal
   * In the first terminal window, navigate to the downloaded (and unpacked) folder with the application and go to the 'client' folder
   * Firstly type 'npm i' (if using yarn, use 'yarn add') to download all the dependecies
+  * After contacting the developers, open the provided 'keys.txt' file and follow the instructions in the file
   * Start the application using the command 'npm start' (if using yarn, use 'yarn start') and wait for the terminal to return information about the successful launch of  the project
   * In the second terminal window, navigate to the 'server' folder
   * Firstly type 'npm i' (if using yarn, use 'yarn add') to download all the dependecies
@@ -24,6 +25,7 @@ Aplikacja zostałą zabezpieczona przed ewentualnymi oszustami - użytkownik mus
   * Skopiuj ścieżkę projektu po czym uruchom terminal
   * W pierwszym oknie terminala przejdź do pobranego (i rozpakowanego) folderu z aplikacją i przejdź do folderu 'client'
   * Wpisz 'npm i' (przy korzystaniu z yarn'a użyj 'yarn add' w celu pobrania potrzebnych pakietów
+  * Po kontakcie z developerami otwórz dostarczony plik 'keys.txt' i postępuj zgodnie z instrukcją zawartą w pliku
   * Uruchom aplikację komendą 'npm start' (przy korzystaniu z yarn'a użyj 'yarn start') i zaczekaj aż terminal zwróci informacje o poprawnym uruchomieniu projektu
   * W drugim oknie terminala przejdź do folderu 'server'
   * Wpisz 'npm i' (przy korzystaniu z yarn'a użyj 'yarn add' w celu pobrania potrzebnych pakietów
